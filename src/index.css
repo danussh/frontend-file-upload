@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+body {
+  background: #fafafa;
+  min-height: 100vh;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(0,0,0,.02) 35px, rgba(0,0,0,.02) 70px);
+  pointer-events: none;
+  z-index: 0;
+}
